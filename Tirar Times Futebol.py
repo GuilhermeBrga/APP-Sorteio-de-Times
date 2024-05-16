@@ -4,12 +4,11 @@ tamanho_time = int(input("Quantas pessoas irão jogar? "))
 
 jogadores = []
 
-print("Digite o número de estrelas do jogador (1 a 5):\nSelecione em qual posição o jogador joga (0 - zagueiro, 1 - atacante): ")
-
 for pessoas in range(1, tamanho_time + 1):
+    print(f"Digite os dados do jogador {pessoas}")
     nome = input("Digite o nome: ")
-    estrelas = float(input("Qual a quantidade de estrelas do jogador: "))
-    posicao = int(input("Digite em qual posição atua o jogador: "))
+    estrelas = float(input("Qual a quantidade de estrelas do jogador (1 a 5): "))
+    posicao = int(input("Digite em qual posição atua o jogador (0 - zagueiro, 1 - atacante): "))
     jogador = {
         "nome": nome,
         "estrelas": estrelas,
